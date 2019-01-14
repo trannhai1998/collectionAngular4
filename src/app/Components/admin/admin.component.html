@@ -1,0 +1,53 @@
+<app-header></app-header>
+<!-- Latest compiled and minified CSS & JS -->
+<body>
+	<div class="searchBox">
+		<div class="searchheader">
+			<form action="" #formSearch="ngForm" (ngSubmit)="OnSubmit(formSearch.value)">
+				<input type="text" id="iptextsearch" (keyup)="OnKeySearch($event)" [(ngModel)]="search" [ngModelOptions]="{standalone: true}">
+				<button type='submit'></button>
+			</form>
+		</div>
+		<button id="btnalluser" (click)="Onclickalluser()">All User</button>
+		<div class="mainsearch">
+			<h1 style="color : #fff">Users</h1>
+			<table style="width:100%;border:1px solid #fff">
+				<tr>
+					<th>ID</th>
+					<th>FullName</th> 
+					<th>Address</th>
+					<th>Date</th>
+					<th width="70px">Action</th>
+				</tr>
+				<tr *ngFor="let item of users">
+					<td>{{ item.id }}</td>
+					<td>{{ item.fullname }}</td> 
+					<td>{{ item.address }}</td>
+					<td>{{ item.date }}</td>
+					<td><button id="btndeleted" (click)="OnDeleted(item.id)">Deleted</button>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		
+		<div class="SlideBox">
+			<h1 style="color : #fff">Slides Manager</h1>
+			<button type="button" id="btnslide" (click)="onClickAddSlide()">Add Slide</button>
+			<input type="file" id="btnfile" (change)="OnFileSelected($event)" value="Add Value" hidden="" />
+			<div class="mainsearch">
+				<table >
+					<tr>
+						<th  >ID</th>
+						<th>Image</th>
+						<th width="70px">Action</th>
+					</tr>
+					<tr *ngFor="let item of ImgSlide">
+						<td>{{ item.id }}</td>
+						<td><img [src]="item.link" alt=""></td>
+						<td><button id="btndeleted" (click)="OnDeletedSlide(item.id)">Deleted</button>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</body>

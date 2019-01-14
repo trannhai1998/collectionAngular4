@@ -1,0 +1,17 @@
+<body>
+<div class="login-page">
+  <div class="form">
+    <form class="register-form" #formsignup="ngForm" (ngSubmit)="OnSubmitSignup(formsignup.value)" >
+      <input type="text" name="fullname" placeholder="Fullname" ngModel />
+      <input type="text" name="username" placeholder="Username" id="username" ngModel />
+      <input type="password" name="pwd" placeholder="password" ngModel />
+      <input type="password"  name= "repwd" placeholder="retype password" ngModel />
+      <input type="text"  name="address" placeholder="Address" ngModel />
+      <input type="date" name="date" placeholder="Date" ngModel />
+      <p class="messdanger" style="color:red">{{message}}</p>
+      <button type="submit">Create</button>
+      <p class="message">Already registered? <a [routerLink]="['/login']">Sign In</a></p>
+    </form>
+  </div>
+</div>
+</body>

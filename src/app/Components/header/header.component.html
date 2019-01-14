@@ -1,0 +1,104 @@
+
+<header>
+	<div class="logo">LOGO</div>
+	<div class="search">
+		<input type="text" id="ipsearch" (keyup)="OnKeySearch($event)">
+		<button type='submit'></button>
+	</div>
+	<nav>
+		<ul >
+			<li><a [routerLink]="['']">Home</a></li>
+			<li><a href="">Contact</a></li>
+			<li id="li-user"><a >User </a>
+				<ul class="categories">
+					<li id="aProfile"><a  [routerLink]="['/profile',id]">Profile</a></li>
+					<li id="admindb"><a [routerLink]="['/admin',id]">Admin </a></li>
+				</ul>
+			</li>
+			<li class="logout" ><a [routerLink]="['']" (click)="OnLogout()" >Logout</a></li>
+			<li id="login"><a [routerLink]="['/login']" >Login</a></li>
+			
+		</ul>
+	</nav>
+	<div class="menu-toggle"><i class="fas fa-bars" style="font-size: 30px;"></i></div>
+</header>
+<main class="boxsearch">
+	<ul class="box" >
+		<li *ngFor="let item of ImgresultSearch">
+		<img [src]="item.image" alt="">
+		</li>
+	</ul>
+</main>
+
+
+
+<div class="modal-login">
+	<div class="modal-content">
+		<div class="modal-header">
+			<button id="closemodal"type="button" value="">X</button>
+			<ng-container *ngIf="!isSignup">
+				<h1>Login</h1>
+			</ng-container>
+			<ng-container *ngIf="isComebackLogin">
+				<h1>Sign Up</h1>
+			</ng-container>
+		</div>				
+		<div class="modal-main">
+			<ng-container *ngIf="signupsuccess == false">
+				<form action="" class="form-control" #formlogin="ngForm" (ngSubmit)="OnSubmit(formlogin.value)" autocomplete="off">
+					<div class="inputBox">
+						<input type="text" name="username" id='ipusername' style="margin-bottom:20px;" autocomplete="false"  ngModel required="required">
+						<label for="">Username</label>
+					</div>
+					<div class="inputBox">
+						<input type="password" name="pwd" id='ippwd' ngModel required>
+						<label for="">Password</label>
+					</div>
+					<ng-container *ngIf="isSignup" >
+						<div class="inputBox" >
+							<input type="password" name="repwd" id='iprepwd' ngModel required>
+							<label for="">re-Password</label>
+						</div>
+						<div class="inputBox" >
+							<input type="text" name="repwd" id='iprepwd' ngModel required>
+							<label for="">FullName</label>
+						</div>
+						<div class="inputBox" >
+							<input type="password" name="address" id='iprepwd' ngModel required>
+							<label for="">Address</label>
+						</div>
+						<div class="inputBox" >
+							<input type="date" name="repwd" id='iprepwd' ngModel required>
+							<label for="">Date</label>
+						</div>
+					</ng-container>
+					<ng-container *ngIf="loginfalse">
+						<span style="color :red ; font-size: 20px">username hoặc password sai . xin hãy thử lại</span>
+					</ng-container>
+					<ng-container *ngIf="usernameAvailable">
+						<span style="color :#fff; font-size: 20px;margin-bottom: 10px">Tên Đăng Nhập Đã Tồn Tại</span>
+					</ng-container>
+					<ng-container *ngIf="repwdfalse">
+						<span style="color :#fff; font-size: 20px;margin-bottom: 10px">Mật Khẩu Không Trùng Khớp</span>
+					</ng-container>
+					<button type="submit">Submit</button>
+				</form>
+			</ng-container>
+			<ng-container *ngIf="signupsuccess">
+				<div style="background: #333;padding: 20px 0px">
+					<h1 style="color : #fff;text-align: center;">Đăng Kí Thành Công</h1>
+					<button type='button' style="display: block;width: 100px;height: 50px;cursor: pointer;background: #fff;font-size: 30x;border:0;margin:10px auto" (click)="clickbtnLogin()">Login</button>
+
+				</div>
+			</ng-container>
+		</div>
+		<div class="modal-footer">
+			<ng-container *ngIf="!isSignup">
+				<p>Dont Have Acount ?? <button (click)="clickSignup()">Signup</button></p>
+			</ng-container>
+			<ng-container *ngIf="isComebackLogin">
+				<p> Have Acount !!<button (click)="clickbtnLogin()">Login</button></p>
+			</ng-container>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,13 @@
+<body>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form" #formlogin="ngForm" (ngSubmit)="OnSubmitLogin(formlogin.value)">
+      <input type="text" name="username" placeholder="Username" ngModel />
+      <input type="password" name="pwd" placeholder="Password" ngModel />
+      <p class="messdanger" style="color:red">{{message}}</p>
+      <button type="submit">Login</button>
+      <p class="message">Not registered? <a [routerLink]="['/signup']">Create an account</a></p>
+    </form>
+  </div>
+</div>
+</body>

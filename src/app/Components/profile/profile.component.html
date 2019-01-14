@@ -1,0 +1,40 @@
+<app-header></app-header>
+<body style="width: 100%;height: 100%;background:#E9EBEE;margin: 0;padding: 20px 0 0 0 ">
+	<div class="profile">
+		<span class="avatar">
+			<img [src]='imgAvatar' alt="">
+			<button id="btnavatar">Avatar</button>
+			<input type="file" id="ipavatar"hidden="" (change)="OnAvatar($event)">
+		</span>
+		<hr>
+		<div class="info">
+			<div class="label">
+				<label>FULLNAME </label>
+				<label>ADDRESS </label>
+				<label>DATE </label>
+			</div>
+			<div class="result">
+				<ng-container *ngIf="haveprofile == false"> 
+					<h1>Update Profile</h1>
+					<ng-container *ngIf="visiter == false">
+					<button (click)="OnUpdate()">Update</button>
+					</ng-container>
+				</ng-container>
+				<ng-container *ngIf="formUpdate">
+					<form action="" #formupdate="ngForm" (ngSubmit)="Update(formupdate.value)">
+						
+						<input type="text"  [value]="user.fullname !== undefined ? user.fullname : ''" [(ngModel)]="user.fullname" [ngModelOptions]="{standalone: true}">
+						<input type="text"  [value]="user.address !== undefined ? user.address : ''" [(ngModel)]="user.address" [ngModelOptions]="{standalone: true}">
+						<input type="date"  [value]="user.date !== undefined ? user.date : ''" [(ngModel)]="user.date" [ngModelOptions]="{standalone: true}">
+					</form>
+				</ng-container>
+
+			</div>
+		</div>
+		<button id='updatebtn' type="submit" (click)="Update()">Update Profile</button>
+		<ng-container *ngIf="updatesuccess == true">
+			<label for="" style="color : #20DE32;margin-left: 20px;font-size: 20px;text-transform: uppercase;">Update Success ! </label>
+		</ng-container>
+	</div>
+	<app-collection></app-collection>
+</body>

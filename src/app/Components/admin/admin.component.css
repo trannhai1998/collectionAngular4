@@ -1,0 +1,152 @@
+body {
+	background:#E9EBEE;
+	font-family: sans-serif;
+	margin:0;
+	padding: 0;
+	padding-top: 20px;
+}
+.searchBox {
+	width: 90%;
+	height: 100vh;
+	margin:0 auto;
+	border:3px solid #39B8F3;
+	padding: 20px 5px 0 20px;
+	border-radius:20px;
+	background: #262626;
+	margin-bottom: 50px;
+}
+.searchheader{
+	width: 100%;
+	position: relative;
+
+}
+.searchheader form input {
+	width: 100%;
+	height: 40px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border : none;
+	outline: none;
+	background: #D4F8FB;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-right: 50px;
+	box-sizing: border-box;
+	color:black;
+
+}
+.searchheader form button {
+	position: absolute;
+	right:-1px;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	border :none;
+	outline: none;
+	cursor: pointer;
+	top:-1px;
+	background: #70FB8A;
+	transition: 0.5s;
+}
+.searchheader form button:before{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f002";
+	font-size: 30px;
+	color:#fff;
+}
+.searchheader form button:hover{
+	color :black;
+	background: red;	
+}
+#btnalluser {
+	height: 35px;
+	width: 120px;
+	margin:10px auto;
+	border:none;
+	background: #F2C3C3;
+	cursor: pointer;
+}
+.mainsearch table{
+	color:#fff;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+	margin-top:20px;
+	overflow-x:auto;
+}
+.mainsearch table tr th{
+	border:1px solid #fff;
+	text-align: left;
+	padding: 8px;
+}
+.mainsearch table tr td {
+	border:1px solid #fff;
+	text-align: left;
+	padding: 8px;
+}
+.mainsearch table tr:nth-child(even){background-color: #f2f2f2;color: black;}
+#btndeleted {
+	background: red;
+	color:#FFFFFF;
+	border:none;
+	transition: 0.2s;
+	cursor: pointer;
+}
+#btndeleted:hover {
+	transform: scale(1.1,1.1);
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+}
+#btnAdmin {
+	background: red;
+	color:#ffffff;
+	border:none;
+	transition: 0.2s;
+	cursor: pointer;	
+}
+#btnAdmin:hover{
+	transform: scale(1.1,1.1);
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+}
+.SlideBox{
+	width: 90%;
+	height: auto;
+	min-height: 500px;
+	margin:0 auto;
+	border:3px solid #39B8F3;
+	padding: 20px 5px 10px 20px;
+	border-radius:20px;
+	background: #262626;
+	margin-bottom: 50px;
+}
+.SlideBox table{
+	color:#fff;
+	border-spacing: 0;
+	width: 100% !important;
+	border: 1px solid #ddd;
+	margin-top:20px;
+	overflow-x:auto;
+}
+table tr td img {
+	width: 300px;
+	height: 200px;
+}
+#btnslide{
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	border:none;
+	outline: none;
+	cursor: pointer;
+}
+@media (max-width: 490px){
+	table tr td img {
+		width: 200px;
+		height: 150px;
+	}
+}

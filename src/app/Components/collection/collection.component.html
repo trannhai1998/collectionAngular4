@@ -1,0 +1,51 @@
+<body>
+	<div class="boximage">
+		<button id="modalupload">Upload</button>
+		<div class="modal">
+			<div class="modal-content">
+				<div class="modal-image">
+					<img  alt="" id="imageupload">
+				</div>
+				<div class="modal-action">
+					<input type="file" value="Upload" id="ipupload" accept="image/*" hidden="hidden" (change)="OnFileSelected($event)">
+					<button id="btnchoose"><i class="fas fa-images"></i></button>
+					<button id="realbtnupload" (click)="OnUpload()">Upload</button>
+				</div>
+				<div id="listcate">
+					<h2>Categories</h2>		
+					<select id ="selected">
+						<option value="khac" selected="">Khác</option>
+						<option value="life">Life</option>
+						<option value="yourcity">Your City</option>
+						<option value="fashion">Fashion</option>
+					</select>
+				</div>
+				<input type="text" id="stt" [(ngModel)]="nameimg" [ngModelOptions]="{standalone: true}" placeholder="Name of Image" >
+			</div>
+		</div> 
+		<hr/>
+		<!-- list-image -->
+		<ul class="list-image" >
+			<li class="swiper-slide" *ngFor="let item of imgUrl">
+				<img [src]="item.image" alt="" (click)="ClickImage(item.image)">
+				<ng-container *ngIf="boss">
+					<i class="fas fa-trash-alt" (click)="OnClickTrast(item.id)"></i>
+				</ng-container>
+			</li>
+			<div class="modal-click">
+				<div class="modal2">
+					<img [src]="ImageClick" alt="">
+				</div>
+			</div>
+		</ul>
+	</div>
+	<div class="modal3">
+		<div class="modal-deleted">
+			<h1>Bạn Muốn Xóa Ảnh Này Không ??</h1>
+			<button id="btnOK" (click)="OnClickOK()">OK</button>
+			<button id="btnClose" (click)="OnClickClose()">Close</button>
+		</div>
+	</div>
+
+
+</body>

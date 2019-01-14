@@ -1,0 +1,273 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Trần Nam Hải",
+      "username": "pronamvip1998",
+      "password": "namvip123",
+      "date": "1998-03-01",
+      "address": "Đà Nẵng , Hello"
+    },
+    {
+      "fullname": "NguyenBinh",
+      "username": "nguyenbinh23",
+      "password": "123123",
+      "date": "1997-03-11",
+      "address": "Ha Noi",
+      "id": 2
+    },
+    {
+      "fullname": "Nguyen Vinh",
+      "username": "nguyenvinh113",
+      "password": "123123",
+      "date": "1997-03-11",
+      "address": "Kinh Do",
+      "id": 3
+    },
+    {
+      "fullname": "Bùi Yến Nhi",
+      "username": "yennhi98",
+      "password": "123123",
+      "date": "1999-03-10",
+      "address": "Đà Nẵng",
+      "id": 4
+    },
+    {
+      "fullname": "Nguyễn Bá Thanh",
+      "username": "bathanh98",
+      "password": "123123",
+      "date": "1199-03-12",
+      "address": "Đà Nẵng",
+      "id": 5
+    },
+    {
+      "fullname": "Hai Tran",
+      "username": "123123",
+      "password": "namvip123",
+      "date": "1998-03-11",
+      "address": "Đà Nẵng",
+      "id": 6
+    },
+    {
+      "fullname": "Hai Tran",
+      "username": "test02",
+      "password": "123123",
+      "date": "1998-03-11",
+      "address": "Đà Nẵng",
+      "id": 7
+    },
+    {
+      "fullname": "Hai Tran",
+      "username": "123123",
+      "password": "123123",
+      "date": "1998-12-12",
+      "address": "Da Nang",
+      "id": 8
+    },
+    {
+      "fullname": "Hai Tran",
+      "username": "test05",
+      "password": "123123",
+      "date": "1998-12-11",
+      "address": "Da Nang",
+      "id": 9
+    },
+    {
+      "fullname": "Vinh Thuy",
+      "username": "pronamvip123",
+      "password": "123123",
+      "date": "1998-12-12",
+      "address": "Đà Nẵng",
+      "id": 10
+    },
+    {
+      "fullname": "Phong",
+      "username": "phongvu113",
+      "password": "123123",
+      "date": "1998-03-01",
+      "address": "Đà Nẵng",
+      "id": 11
+    },
+    {
+      "fullname": "KimChi98",
+      "username": "kimchi113",
+      "password": "123123",
+      "date": "1998-03-11",
+      "address": "Đà Nẵng",
+      "id": 12
+    }
+  ],
+  "admins": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ],
+  "avatars": [
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1544680614/mfuv7nxplnpf4ubit5js.jpg",
+      "iduser": 1,
+      "id": 1
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1544988187/js2b9cbnv2flwocxxj38.jpg",
+      "iduser": 1,
+      "id": 2
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1545091089/aveh93ej2bzrnxc4ww9j.jpg",
+      "iduser": 1,
+      "id": 3
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546325753/ve3bhb8sbhcm79hwuowo.jpg",
+      "iduser": 1,
+      "id": 4
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546679528/wcvkpmh7qz3ovr63qutf.jpg",
+      "iduser": 7,
+      "id": 5
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546680357/ozrddk5x6evjzqpqco84.jpg",
+      "iduser": 10,
+      "id": 6
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546691249/tllw5c9l6mxx2evitsfy.jpg",
+      "iduser": 2,
+      "id": 7
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546768304/wtxoa1vm4nhz2xlkxkmo.jpg",
+      "iduser": 1,
+      "id": 8
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546822559/cyxyg176l98j5xwmsapf.jpg",
+      "iduser": 9,
+      "id": 9
+    }
+  ],
+  "test": [
+    {
+      "id": 1,
+      "name": "Hai",
+      "avatar ": ""
+    },
+    {
+      "id": 2
+    }
+  ],
+  "images2": [
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546714503/bnkkn6bpqsw7v8n48o6h.jpg",
+      "iduser": 1,
+      "category": "khac",
+      "fullname": "Trần Nam Hải",
+      "avatar": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546325753/ve3bhb8sbhcm79hwuowo.jpg",
+      "nameimg": "city night",
+      "id": 1
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546714697/ebapwmop3iluare5ophn.jpg",
+      "iduser": 1,
+      "category": "khac",
+      "fullname": "Trần Nam Hải",
+      "avatar": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546325753/ve3bhb8sbhcm79hwuowo.jpg",
+      "nameimg": "Lion",
+      "id": 2
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546714762/jmxeibtp6yvmh9p0luqp.jpg",
+      "iduser": 1,
+      "category": "fashion",
+      "fullname": "Trần Nam Hải",
+      "avatar": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546325753/ve3bhb8sbhcm79hwuowo.jpg",
+      "nameimg": "fashion ",
+      "id": 3
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546714794/fb4x8b3azgmkooxbz3mb.jpg",
+      "iduser": 1,
+      "category": "life",
+      "fullname": "Trần Nam Hải",
+      "avatar": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546325753/ve3bhb8sbhcm79hwuowo.jpg",
+      "nameimg": "life in tokyo ",
+      "id": 4
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546767799/unnvauauduc9uagwbzlz.jpg",
+      "iduser": 1,
+      "category": "yourcity",
+      "fullname": "Trần Nam Hải",
+      "avatar": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546325753/ve3bhb8sbhcm79hwuowo.jpg",
+      "nameimg": "Newyork",
+      "id": 5
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546767840/z7hallpuv278gntxhihe.jpg",
+      "iduser": 1,
+      "category": "khac",
+      "fullname": "Trần Nam Hải",
+      "avatar": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546325753/ve3bhb8sbhcm79hwuowo.jpg",
+      "nameimg": "Bắc Cực",
+      "id": 6
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546767870/krulqsv3usrfcjck9wv6.jpg",
+      "iduser": 1,
+      "category": "khac",
+      "fullname": "Trần Nam Hải",
+      "avatar": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546325753/ve3bhb8sbhcm79hwuowo.jpg",
+      "nameimg": "Rừng Dừa Việt Nam",
+      "id": 7
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546777017/iuwfc5yuzqejni94bnyl.jpg",
+      "iduser": 1,
+      "category": "khac",
+      "fullname": "Trần Nam Hải",
+      "avatar": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546768304/wtxoa1vm4nhz2xlkxkmo.jpg",
+      "nameimg": "City",
+      "id": 8
+    },
+    {
+      "image": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546822584/jf5710l84he0wz4355h4.jpg",
+      "iduser": 9,
+      "category": "khac",
+      "fullname": "Hai Tran",
+      "nameimg": "forest",
+      "id": 9
+    }
+  ],
+  "slide": [
+    {
+      "id": 1,
+      "link": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546714794/fb4x8b3azgmkooxbz3mb.jpg"
+    },
+    {
+      "id": 2,
+      "link": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546714697/ebapwmop3iluare5ophn.jpg"
+    },
+    {
+      "id": 3,
+      "link": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546767799/unnvauauduc9uagwbzlz.jpg"
+    },
+    {
+      "id": 4,
+      "link": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546714503/bnkkn6bpqsw7v8n48o6h.jpg"
+    },
+    {
+      "link": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546777889/ihzgitfpmfnkojbcuekf.jpg",
+      "id": 5
+    },
+    {
+      "link": "https://res.cloudinary.com/pronamvip1998/image/upload/v1546777939/ze9iqunqw0vbcnn0c11g.jpg",
+      "id": 6
+    }
+  ]
+}

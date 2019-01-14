@@ -1,0 +1,21 @@
+<app-header></app-header>
+<body>
+	<div class="boximage">
+		<ul class="list-image" >
+			<li  *ngFor="let item of images" >
+				<img [src]="item.image" alt="" (click)="ClickImage(item)">
+				<div id="boxinfo" >
+					<div id="avatar" >
+						<img [src]="item.avatar" (click)="ClickAvatar(item.iduser)" alt="">
+					</div>
+					<span id ="name">{{item.fullname}}</span>
+				</div>
+		</li>
+		<div class="modal-click">
+			<div class="modal2">
+				<img [src]="ImageClick" alt="">
+			</div>
+		</div>
+	</ul>
+</div>
+</body>

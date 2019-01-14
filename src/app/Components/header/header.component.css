@@ -1,0 +1,443 @@
+header{
+	background: #262626;
+	width: 100%;
+	height: 60px;
+	z-index: 2;
+}
+header .logo {
+	color : #fff;
+	height: 60px;
+	line-height: 60px;
+	font-size: 30px;
+	float:left;
+	font-weight: bold;	
+	margin-left: 50px;
+}
+header nav {
+	float: right;
+	position: absolute;
+	right:40px;
+	z-index: 1000;
+}
+header nav ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-right :70px;
+}
+header nav ul li {
+	text-align: center;
+}
+header nav ul li a {
+	line-height: 60px;
+	padding: 0 20px;
+	text-decoration: none;
+	font-size: 18px;
+	color : #4dabf7;
+	display: block;
+	width: 60px;
+	transition: .5s;
+	z-index: 1;
+	cursor: pointer;
+}
+header nav ul li a:hover {
+	color: #fff;
+	background: #FAA05E;
+}
+li#login a{
+	text-align: left;
+	width:55px ;
+}
+li#login{
+	position: relative;
+	margin-left:10px;
+	margin: 0;
+	display: block;
+}
+li#login:before{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f234";
+	position: absolute;
+	right: 3.7px;
+	top:17px;
+	font-size: 20px;
+	color:#fff;
+}
+/*// User*/
+li#li-user {
+	display: block;
+	width: 90px;
+	position: relative;
+	text-align: left;
+	display: none;
+}	
+li#li-user::before{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f150";
+	position: absolute;
+	right: 10px;
+	top:22px;
+	color:#fff;
+}
+li#li-user.active:before{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f151";
+	position: absolute;
+	right: 10px;
+	top:22px;
+	color:#fff;
+}
+
+li#li-user ul.categories{
+	display: none;
+	z-index: 2000;
+}
+li#li-user.active ul li a {
+	background:#262626 ;
+	color:#fff;
+	transition: .5s;
+	z-index: 2000;
+}
+li#li-user.active ul li a:hover{
+	color: #fff;
+	background: #FAA05E;
+}
+li#li-user.active ul.categories {
+	display:block ;
+}
+
+
+/*//Logout nav*/
+header nav ul li.logout{
+	position: relative;
+	margin-left: 10px;
+	display: block;
+	width: 90px;
+	margin-right: 50x;
+	text-align: left;
+	height: 60px;
+	display: none;
+}
+header nav ul li.logout a {
+	width: 60px ;
+}
+header nav ul li.logout:before{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f2f5";
+	position: absolute;
+	right: -10px	;
+	top:20px;
+	font-size: 20px;
+	color:#fff;
+}
+/*menu-toggle*/
+.menu-toggle{
+	float:right;
+	color : #fff;
+	line-height: 50px;
+	position: absolute;
+	right: 12px;
+	top:8px;
+	display: none;
+	cursor: pointer;
+}
+
+/*modal*/
+.modal-login {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 100;
+	display: none;
+}
+.modal-content{
+	z-index: 3;
+	display: flex;
+	height: 500px;
+	width: 400px;
+	background: #fff;
+	margin:100px auto;
+	background: #F8D065;
+	flex-direction: column;
+}
+/*//modal login*/
+.modal-header{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+
+}
+.modal-header  h1{
+	margin-top:30px;
+	width: 90%;	
+	color:#262626;
+	font-family: sans-serif;
+	margin-left: 20px;
+	border-bottom:2px solid #333;
+	letter-spacing: 4px;
+	padding-bottom: 10px;
+}
+
+.modal-header button {
+
+	position: absolute;
+	color : #fff;
+	background: red;
+	box-shadow: -1px -1px -1px -1px;
+	right: 10px;
+	top:5px;
+	border:0;
+	font-weight: 100px;
+	opacity: 0.7;
+}
+.modal-header button:hover{
+	opacity: 1;
+}
+/*modal-main*/
+.modal-main{
+	margin-top: 70px;
+	width: 400px;
+	height: 300px;
+	margin-top:100px;
+}
+
+.modal-main form{
+	display: flex;
+	flex-direction: column;
+	background: #333;
+	padding: 20px;
+}
+.inputBox{
+	position: relative;
+}
+.inputBox label{
+	color:#03a9f4;
+	font-size:14px;
+	position: absolute;
+	top:-18px;
+	left: 0;
+	padding:10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	margin-botton:4px;
+}
+.inputBox input{
+	padding:10px 0;
+	font-size:16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border:none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	letter-spacing: 1px;
+	width: 100%;
+}
+.inputBox input:focus ~ Label,
+.inputBox input:valid ~ Label{
+	
+	
+}
+
+.modal-main form button {
+	background: transparent;
+	border:none;
+	outline: none;
+	color:#ffffff;
+	background: #03a9f4;
+	padding:10px 20px;
+	cursor: pointer;
+	transition: 0.5s;
+	border-radius: 5px;
+}
+.modal-main form button:hover{
+	background: #36E27F;
+}
+
+/*//modal-footer*/
+.modal-footer {
+	width: 400px;
+	height: 100px;	
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+.modal-footer p {	
+}
+.modal-footer button{
+	background: #EC6237;
+	font-size: 20px;
+	border:0;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: 0;
+}
+
+/*Search*/
+.search{
+	height: 40px;
+	padding: 10px 0;
+	width: 300px;
+	float:left;
+	position: relative;
+}
+.search #ipsearch {
+	width: 100%;
+	margin-top:3px;
+	height: 30px;
+	margin-left:20px;
+	border-radius:15px;
+	border:none;
+	outline: none;
+	padding: 2px 10px 2px 15px;
+	font-size: 20px;
+}
+
+.search button {
+	position: absolute;
+	right:-47px;
+	height: 34px;
+	width: 34px;
+	border-radius: 17px;
+	border :none;
+	outline: none;
+	cursor: pointer;
+	top:13px;
+	background: #70FB8A;
+	transition: 0.5s;
+}
+.search  button:before{
+	font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f002";
+	font-size: 20px;
+	color:#fff;
+}
+
+/*main*/
+main {
+	display: block;
+	position: relative;
+	background: #fff;
+	top:0px;
+	width: 100%;
+	height: auto;
+	min-height:200px; 
+	display: none;
+}
+main ul {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(6,1fr);
+	grid-gap: 5px;
+	list-style: none;
+}
+main ul li {
+	height: 200px;
+	width: 250px;
+	display: block;
+	float:right;
+}
+main ul li img {
+	width: 240px;
+	height: 190px;
+	margin:5px ;
+}
+
+
+@media  (max-width:950px){
+
+	header nav {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		top:-60px;
+		background: #262626;
+		left: 0;
+
+		display: none;
+	}
+	header nav.active{
+		top:60px;
+		display: block;
+	}
+	header nav ul {
+		display: block;
+		flex-direction: row;
+		text-align: center;
+		margin:0;
+	}
+	header nav ul li a {
+		border-bottom: 1px solid rgba(0,0,0,.4);
+	}
+	header nav ul li a {
+		width: 100vw;
+	}
+	header nav ul li.logout{
+		width: 100vw;
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+	li#li-user a,li#login a,header nav ul li.logout a {
+		text-align: center;
+		width: 100vw;
+	}
+	li#li-user::before{
+		top: 6px;
+		font-size: 46px;
+		left: 50px;
+	}
+	li#li-user.active::before{
+		top: 6px;
+		font-size: 46px;
+		left: 43%;
+	}
+	li#login::before{
+		font-size:43px;
+		left:50px;
+		top:7px;
+		width: 50px;
+		pointer-events: none;
+	}
+	header nav ul li.logout::before{
+		font-size: 50px;
+		left: 50px;
+		top: 4px;
+		width: 40px;
+		pointer-events: none;
+	}
+	.menu-toggle{display: block;}
+}
+@media  (max-width:600px){
+	.search{
+		width: 200px;
+	}
+	header .logo{
+		margin-left:20px;
+	}
+	main{
+		width: 500px;
+		min-height: 150px;
+	}
+	main ul li {
+		height: 150px;
+		width: 200px;
+	}
+	main ul li img {
+		height: 140px;
+		width: 190px;
+	}
+
+}
+@media  (max-width:500px){
+	.search{
+		width: 170px;
+	}
+	header .logo{
+		margin-left:10px;
+	}
+}
